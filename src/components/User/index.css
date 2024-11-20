@@ -1,0 +1,103 @@
+
+th,
+td {
+  border: 1px solid #4322b1;
+  padding: 1.5rem;
+  line-height: 1.7;
+  text-align: left;
+}
+
+/* Button container styling */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons {
+  font-size: 20px;
+}
+
+/* Edit and Delete buttons */
+.edit-btn,
+.delete-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  margin-right: 0.5rem;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  margin-left: 0.5rem;
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+  opacity: 0.8;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  table {
+    display: block;
+    border: none;
+    box-shadow: none;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tbody {
+    display: block;
+    width: 100%;
+  }
+
+  tr {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  td {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  td:last-child {
+    border-bottom: none;
+  }
+
+  td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    text-transform: capitalize;
+    min-width: 8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  td {
+    flex-wrap: wrap;
+  }
+
+  td::before {
+    font-size: 1.2rem;
+  }
+}
