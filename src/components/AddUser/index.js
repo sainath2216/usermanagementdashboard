@@ -1,3 +1,5 @@
+//Add User
+
 import React from "react";
 import "./index.css"; // Import the CSS file
 
@@ -13,7 +15,7 @@ const AddUser = ({ onAdd }) => {
   return (
     <div>
       <form onSubmit={onSubmitForm} className="form-input">
-        <div>
+        <div className="input-screen-container">
           <input placeholder="Name" name="name" required />
           <input placeholder="Email" name="email" />
           <input placeholder="Department" name="text" />

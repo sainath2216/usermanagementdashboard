@@ -20,6 +20,7 @@
     font-size: 16px;
     margin: 4px;
   }
+ 
   
   .form-input input:focus {
     outline: none;
@@ -50,3 +51,32 @@
     border-top: 1px solid #d69090;
   }
   
+/* Responsive adjustments for smaller screens */
+
+  @media screen and (max-width:576px){
+    .form-input {
+      display: flex;
+      flex-direction: column;
+      width: 350px;
+      margin: 0 auto;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      background-color: #f9f9f9;
+    }
+    .input-screen-container{
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+     
+    }
+    .form-input input {
+      padding: 5px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 8px;
+      margin: 4px;
+    }
+
+  }
